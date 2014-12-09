@@ -1,0 +1,27 @@
+@import "mixins/svg"
+
+
+.image-gallardo
+	@include svg('gallardo')
+	float: left
+
+$image-width: 200px
+$image-height: 107px
+
+.size-1x
+	width: $image-width
+	height: $image-height
+	background-size: $image-width $image-height;
+
+.size-2x
+	width: $image-width*2
+	height: $image-height*2
+	background-size: $image-width*2 $image-height*2;
+
+.size-4x
+	width: $image-width*4
+	height: $image-height*4
+	background-size: $image-width*4 $image-height*4;
+
+body
+	background: #0099BB;

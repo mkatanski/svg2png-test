@@ -1,0 +1,6 @@
+@mixin svg($image-name)
+ 	background: url('../images/png/#{$image-name}.png') transparent 0 0 no-repeat
+ 	background: none, url('../images/svg/#{$image-name}.svg') 0 0 no-repeat
+ 	@media only screen and (-webkit-min-device-pixel-ratio: 2)
+ 		background: url(../images/png/#{$image-name}@2x.png) repeat
+ 		background: none, url('../images/svg/#{$image-name}.svg') 0 0 no-repeat
